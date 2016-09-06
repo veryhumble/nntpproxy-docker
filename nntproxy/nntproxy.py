@@ -22,7 +22,7 @@ class NNTPClientConnector(socketpool.Connector, nntp.NNTPClient):
 		self._life = time.time() - random.randint(0, 10)
 		if backend_mod.Socket != socket.socket:
 			raise ValueError("Bad backend")
-		nntp.NNTPClient.__init__(self, os.environ['USENET_HOST'], os.environ['USENET_PORT'], os.environ['NNTP_USERNAME'], os.environ['NNTP_PASSWORD'], timeout=timeout, use_ssl=use_ssl)
+		nntp.NNTPClient.__init__(self, os.environ['USENET_HOST'], int(os.environ['USENET_PORT']), os.environ['NNTP_USERNAME'], os.environ['NNTP_PASSWORD'], timeout=timeout, use_ssl=use_ssl)
 		self.id = self.socket.getsockname()[1]
 		print(bcolors.HEADER + "%5d NEW CONNECTION" % self.id + bcolors.ENDC)
 		self._connected = True
