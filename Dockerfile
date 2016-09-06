@@ -12,7 +12,6 @@ RUN yum -y install epel-release
 RUN yum -y install python-pip
 
 COPY nntproxy /opt/nntproxy
-RUN chmod +x /opt/nntproxy/pynntp.sh
 
 RUN pip install --upgrade pip
 RUN pip install socketpool pynntp

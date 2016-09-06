@@ -9,5 +9,5 @@ docker run -it  \
 -e NNTP_PASSWORD=<your_password> \
 -e USENET_HOST=<newsserver_url> \
 -e USENET_PORT=563 \
-nntpproxy
+veryhumble/nntpproxy-docker
 ```
