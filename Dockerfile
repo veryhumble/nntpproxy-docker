@@ -2,12 +2,6 @@
 FROM centos:centos7
 
 RUN yum -y update
-#RUN yum groupinstall "Development tools"
-
-#COPY install_python.sh /opt/install_python.sh
-#RUN chmod +x /opt/install_python.sh
-#RUN /opt/install_python.sh
-
 RUN yum -y install epel-release
 RUN yum -y install python-pip
 
