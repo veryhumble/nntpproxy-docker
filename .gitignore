@@ -1,12 +1,5 @@
-<<<<<<< HEAD
 *.DS_Store
 
-*.pyc
-
-*.pyo
-nntpproxy.conf
-nntpproxy_a.conf
-=======
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -96,4 +89,3 @@ ENV/
 
 # Rope project settings
 .ropeproject
->>>>>>> 6d0f195bcdd1968543c30a56af37f57188551ab6
